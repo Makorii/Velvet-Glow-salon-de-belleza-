@@ -16,32 +16,43 @@ export default function Home() {
       <Container sx={{
         minWidth: "100%",
         paddingLeft: "0 !important",
-        paddingRight: "0 !important"
+        paddingRight: "0 !important",
+        background: "linear-gradient(180deg, rgba(243,203,191,1) 50%, rgba(255,255,255,1) 100%)"
       }}>
         <Card
           sx={{
             display: "flex",
-            alignItems: "center"
+            alignItems: "center",
+            background: "linear-gradient(180deg, rgba(243,203,191,1) 50%, rgba(255,255,255,1) 100%)"
           }}
         >
           <CardContent sx={{
             padding: "0 0 0 64px",
             width: "50%"
           }}>
-            <Typography variant="body1">
+            <Typography variant="h6" color="black">
               Salon de belleza
             </Typography>
-            <Typography gutterBottom variant="h3" component="div">
+            <Typography gutterBottom variant="h3" component="div" color="black">
               Transformamos tu look, elevamos tu estilo
             </Typography>
-            <Typography variant="body2" sx={{ color: "text.secondary" }}>
+            <Typography variant="body1" color="black">
               Resaltamos tu belleza única con un enfoque personalizado en cada
               detalle. Nuestro equipo de profesionales está comprometido en
               brindarte una experiencia relajante y transformadora, para que te
               sientas segura y radiante
             </Typography>
-            <CardActions>
-              <Button size="small">¡Quiero un turno!</Button>
+            <CardActions sx={{
+              padding: "15px 0"
+            }}>
+              <Button size="small" variant="outlined" sx={{
+                color: "black",
+                backgroundColor: "#F3CBBF",
+                padding: "10px 20px",
+                borderRadius: "16px",
+                fontWeight: 600,
+                border: "1px solid #E5A65E",
+              }}>¡Quiero un turno!</Button>
             </CardActions>
           </CardContent>
 
@@ -50,7 +61,7 @@ export default function Home() {
             title="mujer"
             sx={{
               width: "50%",
-              height: "100vh",
+              height: "90vh",
               padding: "0 64px 0 0"
             }}
           />
