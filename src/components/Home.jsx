@@ -84,10 +84,10 @@ export default function Home() {
       </Container>
       <Box component="section" padding="20px 64px">
         <Typography align="center">Promos del mes</Typography>
-        <Card sx={{ display: "flex" }}>
+        <Card sx={{ display: "flex", padding: "20px 0" }}>
           <CardMedia
             component="img"
-            height="250px"
+            height="200px"
             image="/src/assets/image.jpg"
             alt="mujer cortandose el cabello"
             sx={{ width: "250px"}}
@@ -98,6 +98,81 @@ export default function Home() {
             </Typography>
             <Typography variant="body2" sx={{ color: "text.secondary" }}>
             Corte de cabello + Secado + Manicura express.
+            </Typography>
+            <CardActions
+              sx={{
+                padding: "15px 0",
+              }}
+            >
+              <Button
+                size="small"
+                variant="outlined"
+                sx={{
+                  color: "black",
+                  backgroundColor: "#F3CBBF",
+                  padding: "10px 20px",
+                  borderRadius: "16px",
+                  fontWeight: 600,
+                  border: "1px solid #E5A65E",
+                }}
+              >
+                ¡Quiero un turno!
+              </Button>
+            </CardActions>
+          </CardContent>
+        </Card>
+        <Card sx={{ display: "flex", padding: "20px 0" }}>
+        <CardMedia
+            component="img"
+            height="200px"
+            image="/src/assets/peinado.jpg"
+            alt="mujer peinandose el cabello"
+            sx={{ width: "250px", objectFit: "cover"}}
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+            Combo Fiesta
+            </Typography>
+            <Typography variant="body2" sx={{ color: "text.secondary" }}>
+            Peinado especial + Maquillaje profesional + Manicura con decoración.
+            </Typography>
+            <CardActions
+              sx={{
+                padding: "15px 0",
+              }}
+            >
+              <Button
+                size="small"
+                variant="outlined"
+                sx={{
+                  color: "black",
+                  backgroundColor: "#F3CBBF",
+                  padding: "10px 20px",
+                  borderRadius: "16px",
+                  fontWeight: 600,
+                  border: "1px solid #E5A65E",
+                }}
+              >
+                ¡Quiero un turno!
+              </Button>
+            </CardActions>
+          </CardContent>
+        </Card>
+        <Card sx={{ display: "flex", padding: "20px 0" }}>
+        <CardMedia
+            component="img"
+            height="200px"
+            image="/src/assets/image2.png"
+            alt="mujer recibiendo tratamiento facial"
+            sx={{ width: "250px"}}
+          />
+          
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+            Promo “Día de Amigas”
+            </Typography>
+            <Typography variant="body2" sx={{ color: "text.secondary" }}>
+            Peinado + Manicura + Tratamiento facial para 2 personas.
             </Typography>
             <CardActions
               sx={{
