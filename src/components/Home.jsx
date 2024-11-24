@@ -82,9 +82,9 @@ export default function Home() {
           />
         </Card>
       </Container>
-      <Box component="section" padding="20px 64px">
-        <Typography align="center">Promos del mes</Typography>
-        <Card sx={{ display: "flex", padding: "20px 0" }}>
+      <Box component="section" padding="20px 64px" sx={{backgroundColor:"white"}}>
+        <Typography align="center" color="black" variant="h4">Promos del mes</Typography>
+        <Card sx={{ display: "flex", padding: "20px 0", backgroundColor:"white", color: "black" }}>
           <CardMedia
             component="img"
             height="200px"
@@ -96,7 +96,7 @@ export default function Home() {
             <Typography gutterBottom variant="h5" component="div">
             Combo de Belleza Express
             </Typography>
-            <Typography variant="body2" sx={{ color: "text.secondary" }}>
+            <Typography variant="body2" sx={{ color:"black" }}>
             Corte de cabello + Secado + Manicura express.
             </Typography>
             <CardActions
@@ -114,6 +114,7 @@ export default function Home() {
                   borderRadius: "16px",
                   fontWeight: 600,
                   border: "1px solid #E5A65E",
+                  textTransform: "none"
                 }}
               >
                 ¡Quiero un turno!
@@ -121,7 +122,7 @@ export default function Home() {
             </CardActions>
           </CardContent>
         </Card>
-        <Card sx={{ display: "flex", padding: "20px 0" }}>
+        <Card sx={{ display: "flex", padding: "20px 0", backgroundColor:"white", color: "black" }}>
         <CardMedia
             component="img"
             height="200px"
@@ -133,7 +134,7 @@ export default function Home() {
             <Typography gutterBottom variant="h5" component="div">
             Combo Fiesta
             </Typography>
-            <Typography variant="body2" sx={{ color: "text.secondary" }}>
+            <Typography variant="body2" sx={{ color:"black" }}>
             Peinado especial + Maquillaje profesional + Manicura con decoración.
             </Typography>
             <CardActions
@@ -151,6 +152,7 @@ export default function Home() {
                   borderRadius: "16px",
                   fontWeight: 600,
                   border: "1px solid #E5A65E",
+                  textTransform: "none"
                 }}
               >
                 ¡Quiero un turno!
@@ -158,7 +160,7 @@ export default function Home() {
             </CardActions>
           </CardContent>
         </Card>
-        <Card sx={{ display: "flex", padding: "20px 0" }}>
+        <Card sx={{ display: "flex", padding: "20px 0", backgroundColor:"white", color: "black" }}>
         <CardMedia
             component="img"
             height="200px"
@@ -171,7 +173,7 @@ export default function Home() {
             <Typography gutterBottom variant="h5" component="div">
             Promo “Día de Amigas”
             </Typography>
-            <Typography variant="body2" sx={{ color: "text.secondary" }}>
+            <Typography variant="body2" sx={{ color:"black" }}>
             Peinado + Manicura + Tratamiento facial para 2 personas.
             </Typography>
             <CardActions
@@ -189,6 +191,7 @@ export default function Home() {
                   borderRadius: "16px",
                   fontWeight: 600,
                   border: "1px solid #E5A65E",
+                  textTransform: "none"
                 }}
               >
                 ¡Quiero un turno!
@@ -197,6 +200,7 @@ export default function Home() {
           </CardContent>
         </Card>
       </Box>
+
     </React.Fragment>
   );
 }
