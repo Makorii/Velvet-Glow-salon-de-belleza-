@@ -25,8 +25,11 @@ function Header() {
   };
 
   return (
-    <AppBar position="static">
-      <Container maxWidth="xl">
+    <AppBar position="static" sx={{ backgroundColor: "white"}}>
+      <Container sx={{
+        minWidth: "100%",
+        paddingLeft: "64px !important",
+        paddingRight: "64px !important",}}>
         <Toolbar disableGutters>
           <CardMedia
             component="img"
@@ -36,7 +39,8 @@ function Header() {
               width: 120,
               height: 120,
               objectFit: "contain",
-              mr: 2,
+              position: "absolute",
+              top: "0",
               display: { xs: "none", md: "flex" },
             }}
           />
@@ -80,13 +84,15 @@ function Header() {
               flexGrow: 1,
               display: { xs: "none", md: "flex" },
               justifyContent: "center",
+              gap:"12px", 
+              padding: "25px 0"
             }}
           >
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, color: "black", display: "block", textTransform: "none", fontSize: "1em" }}
               >
                 {page}
               </Button>
